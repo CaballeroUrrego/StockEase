@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de StockEase Formulario </title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="icon" href="../img/logo.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuarios</h1>
+        <form id="registro-form">
+            <label for="cedula">Cédula</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h2>Datos Ingresados</h2>
+            <p><strong>Cédula:</strong> <span id="res-cedula"></span></p>
+            <p><strong>Nombre:</strong> <span id="res-nombre"></span></p>
+            <p><strong>Teléfono:</strong> <span id="res-telefono"></span></p>
+            <p><strong>Contraseña:</strong> <span id="res-contrasena"></span></p>
+            <section class="button-continuous">
+                <a href="../html/principio.html"><button>Iniciar</button></a>
+            </section>
+          
+        </div>
+    </div>
+    <script src="../js/Datos.js"></script>
+</body>
+</html>
